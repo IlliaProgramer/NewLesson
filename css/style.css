@@ -1,0 +1,353 @@
+body {
+    /*background-image: url('https://img.freepik.com/free-photo/person-serving-cup-coffee_1286-227.jpg?t=st=1716740959~exp=1716744559~hmac=1e068a671b5791124ca3d050e58c14e609827e67d211bbbbf79c6e014776ad26&w=740');*/
+    background-color: #F9EAE1;
+    margin: 0; /* Видаляє зовнішні відступи */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрує по горизонталі */
+    justify-content: center; /* Центрує по вертикалі */
+}
+.parallax {
+
+    background-image: url('https://img.freepik.com/free-photo/person-serving-cup-coffee_1286-227.jpg?t=st=1716740959~exp=1716744559~hmac=1e068a671b5791124ca3d050e58c14e609827e67d211bbbbf79c6e014776ad26&w=740');
+
+
+    height: 30vh;
+    opacity: 90%;
+    color: #F9EAE1;
+
+
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.preparation{
+    width: 100%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5px;
+    align-items: center;
+}
+.item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+h1 {
+    margin-top: 20px;
+}
+.wonka-bar, h1 {
+    font-size: 64px;
+    color: #6F4E37;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: #6F4E37; /* Кофейний колір тексту */
+    text-decoration: none; /* Зняття підкреслення з посилань */
+}
+section {
+    padding: 20px;
+}
+header {
+    text-align: center;
+    color: #fff;
+    padding: 50px 0 0 0; /* Зменшено відступи */
+}
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+h2 {
+    font-size: 64px;
+    color: #6F4E37;
+    text-align: center;
+    margin-top: 0;
+}
+
+p {
+    font-size: 18px;
+    color: #6F4E37;
+    margin-top: 50px;
+}
+h3{
+    color: #6F4E37;
+}
+h4{
+    color: #6F4E37;
+}
+table{
+    color: #6F4E37;
+}
+nav ul li:hover a {
+    color: blue; /* Колір тексту при наведенні миші */
+}
+.video-container {
+    max-width: 80%; /* Максимальна ширина контейнера */
+    margin-top: 20px; /* Відступ зверху від заголовка */
+    margin-bottom: 20px; /* Відступ знизу від відео до секції */
+}
+
+/* Стилі для відео */
+video {
+    width: 100%; /* Заповнює ширину контейнера */
+    height: auto; /* Забезпечує пропорційне змінювання висоти */
+}
+
+.news-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    font-style: italic;
+    color: #888;
+}
+
+.news-content {
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Стилі для кнопок управління відео */
+.video-container .controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-container:hover .controls {
+    opacity: 1;
+}
+
+.video-container button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.video-container button:hover {
+    transform: scale(1.1);
+}
+
+#search-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #6F4E37; /* Колір рамки */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Оформлення button */
+#search-button, .buy-button {
+    padding: 10px 20px;
+    background-color: #6F4E37; /* Колір фону */
+    color: #fff; /* Колір тексту */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover, .buy-button:hover {
+    background-color: #8b6d51; /* Колір фону при наведенні */
+}
+
+/* Оформлення зображень */
+.product img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь для зображень */
+}
+.preparation2 {
+    width: 100%;
+}
+.parallax2 {
+
+    background-image: url('https://gifer.com/en/2B9X');
+
+
+    height: 30vh;
+    opacity: 90%;
+    color: #F9EAE1;
+
+
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-link.pc {
+        display: none;
+    }
+    .pc-nav {
+        width: 0;
+    }
+    .toggle-btn {
+        display: block;
+    }
+    .mobile-nav {
+        display: none;
+    }
+    .mobile-nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .mobile-nav li {
+        display: block;
+        margin-top: 5px;
+    }
+    .mobile-nav a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        border-radius: 5px;
+    }
+    .mobile-nav a:hover {
+        background-color: #e0e0e0;
+    }
+}
+@media screen and (min-width: 600px) {
+    .toggle-btn {
+        display: none;
+    }
+    .mobile-nav {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
